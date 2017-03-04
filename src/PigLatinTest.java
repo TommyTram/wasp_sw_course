@@ -19,7 +19,7 @@ public class PigLatinTest {
 	}
 
 	// Tests when words begin with consonant clusters
-
+	
 	@Test
 	public void evaluatesExpression3() {
 		PigLatin translator = new PigLatin();

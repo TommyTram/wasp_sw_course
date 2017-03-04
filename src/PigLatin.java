@@ -1,3 +1,4 @@
+import java.lang.Math;
 // Class declaration
 public class PigLatin{
 
@@ -23,7 +24,27 @@ public class PigLatin{
 		// Re-arrange the word and apply 'ay' at the end
 		String firstWord = word.substring(firstVowelIndex, word.length());
 		String secondWord = word.substring(0, firstVowelIndex);
-		String lastWord = "ay";
+
+		// If index = 0 then the first word is a vowel
+		String lastWord;
+		if (firstVowelIndex == 0) {
+			lastWord = "way";
+		} else {
+			lastWord = "ay";
+		}
+
+		// Check consonant cluster in the case of e.g shesh -> eshay and not eshshay
+		int firstWordLength = firstWord.length();
+		int secondWordLength = secondWord.length();
+		String firstWordEnd = firstWord.substring(Math.max(firstWordLength-2,0),firstWordLength);
+		String secondWordStart = secondWord.substring(0,secondWordLength);
+
+		System.out.println(firstWordEnd);
+		System.out.println(secondWordStart);
+		if (firstWordEnd.equals(secondWordStart)) {
+			firstWord = word.substring(firstVowelIndex, word.length()-2);
+		}
+		// Append the strings
 		String piglatinWord = firstWord + secondWord + lastWord;
 		
 		// Return the translated word
