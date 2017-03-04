@@ -1,1 +1,1 @@
-# wasp_sw_course
+# WASP Software Engineering Course
