@@ -32,14 +32,17 @@ public class PigLatin{
 
 	public static void main(String args[]){
 	
-	String word;
-	word = "sup";
-	if (args.length > 0) {
-		
-		word = args[0];
-	}
+		// If an input is given
+		if (args.length > 0) {
+			
+			// Store word
+			String word	= args[0];
+			// Translate word
+
+			String piglatinWord = Translator(word);
+			// Print word
+			System.out.println(piglatinWord);
+		}
 	
-	String piglatinWord = Translator(word);
-	System.out.println(piglatinWord);
 	}
 }
