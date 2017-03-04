@@ -10,7 +10,9 @@ In this project we will develop a piglatin translator. So far the code has only 
 # Installation
 Having the packages above installed simply clone the git repo and inside `/wasp_sw_course` run the following command
 
-`ant`
+`ant` for building and compiling everything
+
+`ant junit` to run the JUnit tests as well
 
 If you are in the correct spot in the directory everything will compile, build and run. It will also show if the JUnit passes the written tests for the translator.
 
