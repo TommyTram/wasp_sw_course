@@ -39,8 +39,6 @@ public class PigLatin{
 		String firstWordEnd = firstWord.substring(Math.max(firstWordLength-2,0),firstWordLength);
 		String secondWordStart = secondWord.substring(0,secondWordLength);
 
-		System.out.println(firstWordEnd);
-		System.out.println(secondWordStart);
 		if (firstWordEnd.equals(secondWordStart)) {
 			firstWord = word.substring(firstVowelIndex, word.length()-2);
 		}
