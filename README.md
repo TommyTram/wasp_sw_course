@@ -1,6 +1,8 @@
 # WASP Software Engineering Course
 
-The project is currently being developed only for OSX.
+In this project we will develop a piglatin translator. So far the code has only been tested on the OSX platform, thus all further information is written for OSX implementation. Similar commands or packages should work for Linux/Windows.
+
+# Requirements
 * Java Development Kit ( http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Macports/Homebrew (not required but will easily install Ant)
 * Ant (install with Macports `sudo port install apache-ant` or Homebrew `homebrew install ant`)
