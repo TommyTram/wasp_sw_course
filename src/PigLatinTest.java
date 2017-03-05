@@ -70,22 +70,22 @@ public class PigLatinTest {
 
 	@Test
 	public void evaluatesCapitalLetterPig() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("Pig");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("Pig");
 		assertEquals("Igpay", translatedWord);
 	}
 
     @Test
 	public void evaluatesCapitalLetterCheers() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("Cheers");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("Cheers");
 		assertEquals("Eerschay", translatedWord);
 	}
 
 	@Test
 	public void evaluatesCapitalLetterOmelet() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("Omelet");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("Omelet");
 		assertEquals("Omeletway", translatedWord);
 	}
 
