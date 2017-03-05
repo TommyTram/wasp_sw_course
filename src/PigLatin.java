@@ -1,7 +1,7 @@
 import java.lang.Math;
+import java.lang.*;
 // Class declaration
 public class PigLatin{
-
 
 	// Method for translating single worlds to piglatin
 	public static String Translator(String word){
@@ -9,10 +9,17 @@ public class PigLatin{
 		// Index holder for the first vowel
 		int firstVowelIndex = 0;
 
+        boolean hasUpperCase = false;
+
 		// Loop through to find the first vowel
 		for (int i = 0; i < word.length(); i++){
 			// Extract letter
 			char letter = word.charAt(i);
+
+            if (Character.isUpperCase(word.charAt(0))){
+                hasUpperCase = true;
+                word = word.toLowerCase();
+            }
 
 			// Vowel check
 			if ("AEIOUaeiou".indexOf(letter) != -1) {
@@ -42,9 +49,15 @@ public class PigLatin{
 		if (firstWordEnd.equals(secondWordStart)) {
 			firstWord = word.substring(firstVowelIndex, word.length()-2);
 		}
+
+        if (hasUpperCase == true) {
+            //firstWord.charAt(0).toUpperCase();
+            firstWord = firstWord.substring(0, 1).toUpperCase() + firstWord.substring(1);
+        }
+
 		// Append the strings
 		String piglatinWord = firstWord + secondWord + lastWord;
-		
+	
 		// Return the translated word
 		return piglatinWord;
 	}
@@ -53,7 +66,7 @@ public class PigLatin{
 	
 		// If an input is given
 		if (args.length > 0) {
-			
+
 			// Store word
 			String word	= args[0];
 			// Translate word
