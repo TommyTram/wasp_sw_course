@@ -6,63 +6,63 @@ public class PigLatinTest {
 	//Tests the basic rules
 	
 	@Test
-	public void evaluatesExpression1() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("pig");
+	public void simpleWord1() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("pig");
 		assertEquals("igpay", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression2() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("banana");
+	public void simpleWord2() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("banana");
 		assertEquals("ananabay", translatedWord);
 	}
 
 	// Tests when words begin with consonant clusters
 	
 	@Test
-	public void evaluatesExpression3() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("cheers");
+	public void consonantWord1() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("cheers");
 		assertEquals("eerschay", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression4() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("shesh");
+	public void consonantWord2() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("shesh");
 		assertEquals("eshay", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression5() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("smile");
+	public void consonantWord3() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("smile");
 		assertEquals("ilesmay", translatedWord);
 	}
 
 	// Tests when the word begins with a vowel
 
 	@Test
-	public void evaluatesExpression6() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("eat");
+	public void vowelWord1() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("eat");
 		assertEquals("eatway", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression7() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("omelet");
+	public void vowelWord2() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("omelet");
 		assertEquals("omeletway", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression8() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("egg");
+	public void vowelWord3() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("egg");
 		assertEquals("eggway", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression9() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("are");
+	public void vowelWord4() {
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("are");
 		assertEquals("areway", translatedWord);
 	}
 
