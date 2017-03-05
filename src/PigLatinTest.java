@@ -71,21 +71,21 @@ public class PigLatinTest {
 	@Test
 	public void evaluatesCapitalLetterPig() {
 		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("Pig");
+		String translatedWord = translator.translator("Pig");
 		assertEquals("Igpay", translatedWord);
 	}
 
     @Test
 	public void evaluatesCapitalLetterCheers() {
 		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("Cheers");
+		String translatedWord = translator.translator("Cheers");
 		assertEquals("Eerschay", translatedWord);
 	}
 
 	@Test
 	public void evaluatesCapitalLetterOmelet() {
 		PigLatin translator = new PigLatin();
-		String translatedWord = translator.Translator("Omelet");
+		String translatedWord = translator.translator("Omelet");
 		assertEquals("Omeletway", translatedWord);
 	}
 
