@@ -6,13 +6,13 @@ public class PigLatinTest {
 	//Tests the basic rules
 	
 	@Test
-	public void evaluatesExpression1() {
+	public void simpleWord1() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("pig");
 		assertEquals("igpay", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression2() {
+	public void simpleWord2() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("banana");
 		assertEquals("ananabay", translatedWord);
@@ -21,19 +21,19 @@ public class PigLatinTest {
 	// Tests when words begin with consonant clusters
 	
 	@Test
-	public void evaluatesExpression3() {
+	public void consonantWord1() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("cheers");
 		assertEquals("eerschay", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression4() {
+	public void consonantWord2() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("shesh");
 		assertEquals("eshay", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression5() {
+	public void consonantWord3() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("smile");
 		assertEquals("ilesmay", translatedWord);
@@ -42,25 +42,25 @@ public class PigLatinTest {
 	// Tests when the word begins with a vowel
 
 	@Test
-	public void evaluatesExpression6() {
+	public void vowelWord1() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("eat");
 		assertEquals("eatway", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression7() {
+	public void vowelWord2() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("omelet");
 		assertEquals("omeletway", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression8() {
+	public void vowelWord3() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("egg");
 		assertEquals("eggway", translatedWord);
 	}
 	@Test
-	public void evaluatesExpression9() {
+	public void vowelWord4() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("are");
 		assertEquals("areway", translatedWord);
