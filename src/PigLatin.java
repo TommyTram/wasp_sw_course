@@ -3,6 +3,45 @@ import java.lang.Math;
 public class PigLatin {
 
 
+
+	// Method for translating an entire string with words to piglatin
+	public static String multipleWordTranslator(String sentence) {
+
+		// Separate sentence into words
+		String[] words = sentence.split("(?=[,.!?])|\\s+");
+
+		// The string array holding the translated words
+		String[] translatedWords = new String[words.length];
+		
+		// Translate each separated word
+		for (int i = 0; i < translatedWords.length; i++) {
+			// If it's a , . ! ? don't translate
+			if (",.!?".indexOf(words[i]) != -1) {
+				translatedWords[i] = words[i];
+			// If it's not then translate
+			} else {
+				translatedWords[i] = translator(words[i]);	
+			}
+		}
+
+		// Variable for the translated sentence
+		String translatedSentence = translatedWords[0];
+
+		// Rebuild the translated sentence
+		for (int i = 1; i < translatedWords.length; i++) {
+			// If it's a , . ! ? no space before
+			if (",.!?".indexOf(words[i]) != -1) {
+				translatedSentence += words[i];
+			// Else add space
+			} else {
+				translatedSentence += " " + translator(words[i]);	
+			}
+		}
+
+		return translatedSentence;
+	}
+
+
 	// Method for translating single worlds to piglatin
 	public static String translator(String word) {
 
@@ -51,6 +90,9 @@ public class PigLatin {
 
 	public static void main(String args[]) {
 	
+
+		String tmp =  "hi! this is a test.";
+		System.out.println(multipleWordTranslator(tmp));
 		// If an input is given
 		if (args.length > 0) {
 			

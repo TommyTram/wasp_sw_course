@@ -7,14 +7,14 @@ public class PigLatinTest {
 	
 	@Test
 	public void evaluatesExpression1() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("pig");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("pig");
 		assertEquals("igpay", translatedWord);
 	}
 	@Test
 	public void evaluatesExpression2() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("banana");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("banana");
 		assertEquals("ananabay", translatedWord);
 	}
 
@@ -22,20 +22,20 @@ public class PigLatinTest {
 	
 	@Test
 	public void evaluatesExpression3() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("cheers");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("cheers");
 		assertEquals("eerschay", translatedWord);
 	}
 	@Test
 	public void evaluatesExpression4() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("shesh");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("shesh");
 		assertEquals("eshay", translatedWord);
 	}
 	@Test
 	public void evaluatesExpression5() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("smile");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("smile");
 		assertEquals("ilesmay", translatedWord);
 	}
 
@@ -43,26 +43,26 @@ public class PigLatinTest {
 
 	@Test
 	public void evaluatesExpression6() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("eat");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("eat");
 		assertEquals("eatway", translatedWord);
 	}
 	@Test
 	public void evaluatesExpression7() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("omelet");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("omelet");
 		assertEquals("omeletway", translatedWord);
 	}
 	@Test
 	public void evaluatesExpression8() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("egg");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("egg");
 		assertEquals("eggway", translatedWord);
 	}
 	@Test
 	public void evaluatesExpression9() {
-		PigLatin translator = new PigLatin();
-		String translatedWord = translator.translator("are");
+		PigLatin piglatin = new PigLatin();
+		String translatedWord = piglatin.translator("are");
 		assertEquals("areway", translatedWord);
 	}
 }
