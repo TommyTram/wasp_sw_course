@@ -1,4 +1,9 @@
 import java.lang.Math;
+import java.lang.*;
+import java.nio.file.*;
+import java.io.*;
+import java.nio.charset.*;
+
 // Class declaration
 public class PigLatin {
 
@@ -100,11 +105,14 @@ public class PigLatin {
 		return piglatinWord;
 	}
 
+	public static String readFile(String path, Charset encoding) throws IOException {
+		// Reads a text file and returns a string with its content.
+		byte[] encoded = Files.readAllBytes(Paths.get(path));
+		return new String(encoded, encoding);
+	}
+
 	public static void main(String args[]) {
 	
-
-		String tmp =  "hi! this is a test.";
-		System.out.println(multipleWordTranslator(tmp));
 		// If an input is given
 		if (args.length > 0) {
 
