@@ -5,7 +5,7 @@ In this project we will develop a piglatin translator. So far the code has only 
 # Requirements
 * Java Development Kit ( http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Macports/Homebrew (not required but will easily install Ant)
-* Ant (install with Macports `sudo port install apache-ant` or Homebrew `homebrew install ant`)
+* Ant (install with Macports `sudo port install apache-ant` or Homebrew `brew install ant`)
 
 # Installation
 Having the packages above installed simply clone the git repo and inside `/wasp_sw_course` run the following command
