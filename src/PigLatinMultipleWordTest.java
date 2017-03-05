@@ -6,7 +6,7 @@ public class PigLatinMultipleWordTest {
 	//Test basic space separator
 	
 	@Test
-	public void evaluatesExpression1() {
+	public void sentenceWithSpaces() {
 		PigLatin piglatin = new PigLatin();
 		
 		String translatedSentence = piglatin.multipleWordTranslator("hi this is a test");
@@ -15,7 +15,7 @@ public class PigLatinMultipleWordTest {
 
 	//Test space questionmark and exlamaction mark
 	@Test
-	public void evaluatesExpression2() {
+	public void sentenceWithQuestionMarks() {
 		PigLatin piglatin = new PigLatin();
 		
 		String translatedSentence = piglatin.multipleWordTranslator("question? scared!? does this work?");
@@ -24,7 +24,7 @@ public class PigLatinMultipleWordTest {
 
 	// Test dot, comma exclamation and questionmark
 	@Test
-	public void evaluatesExpression3() {
+	public void sentenceWithCommaDotsQuestionExclamation() {
 		PigLatin piglatin = new PigLatin();
 		
 		String translatedSentence = piglatin.multipleWordTranslator("man!? world.,.,. pig!.,?");
