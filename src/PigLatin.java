@@ -1,16 +1,16 @@
 import java.lang.Math;
 // Class declaration
-public class PigLatin{
+public class PigLatin {
 
 
 	// Method for translating single worlds to piglatin
-	public static String Translator(String word){
+	public static String translator(String word) {
 
 		// Index holder for the first vowel
 		int firstVowelIndex = 0;
 
 		// Loop through to find the first vowel
-		for (int i = 0; i < word.length(); i++){
+		for (int i = 0; i < word.length(); i++) {
 			// Extract letter
 			char letter = word.charAt(i);
 
@@ -49,7 +49,7 @@ public class PigLatin{
 		return piglatinWord;
 	}
 
-	public static void main(String args[]){
+	public static void main(String args[]) {
 	
 		// If an input is given
 		if (args.length > 0) {
@@ -58,7 +58,7 @@ public class PigLatin{
 			String word	= args[0];
 			// Translate word
 
-			String piglatinWord = Translator(word);
+			String piglatinWord = translator(word);
 			// Print word
 			System.out.println(piglatinWord);
 		}
