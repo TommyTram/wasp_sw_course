@@ -9,7 +9,7 @@ import java.nio.charset.*;
 public class PigLatinReadTextTest {
 	@Test
 	public void evaluatesExpression1() throws IOException {
-		String readString = PigLatin.readFile("test.txt", StandardCharsets.UTF_8);;
+		String readString = PigLatin.readFile("src/test.txt", StandardCharsets.UTF_8);;
 		assertEquals("test", readString);
 	}
 
