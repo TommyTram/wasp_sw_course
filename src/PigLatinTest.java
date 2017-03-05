@@ -65,4 +65,28 @@ public class PigLatinTest {
 		String translatedWord = piglatin.translator("are");
 		assertEquals("areway", translatedWord);
 	}
+
+	// Test if a word starts with a capital letter
+
+	@Test
+	public void evaluatesCapitalLetterPig() {
+		PigLatin translator = new PigLatin();
+		String translatedWord = translator.Translator("Pig");
+		assertEquals("Igpay", translatedWord);
+	}
+
+    @Test
+	public void evaluatesCapitalLetterCheers() {
+		PigLatin translator = new PigLatin();
+		String translatedWord = translator.Translator("Cheers");
+		assertEquals("Eerschay", translatedWord);
+	}
+
+	@Test
+	public void evaluatesCapitalLetterOmelet() {
+		PigLatin translator = new PigLatin();
+		String translatedWord = translator.Translator("Omelet");
+		assertEquals("Omeletway", translatedWord);
+	}
+
 }
