@@ -4,6 +4,7 @@ import java.nio.file.*;
 import java.io.*;
 import java.nio.charset.*;
 
+
 // Class declaration
 public class PigLatin {
 
@@ -122,7 +123,19 @@ public class PigLatin {
 	}
 
 	public static void main(String args[]) {
-	
+
+		ConsoleUI consoleUI = new ConsoleUI();
+		consoleUI.processArgs( args );
+
+		if (consoleUI.authors_flag){
+			consoleUI.printAuthorsInfo();
+			return;
+		}
+		if (consoleUI.help_flag){
+			consoleUI.printHelpInfo();
+			return;
+		}
+
 		// If an input is given
 		if (args.length > 0) {
 
