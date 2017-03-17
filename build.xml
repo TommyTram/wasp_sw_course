@@ -29,6 +29,11 @@
                 <attribute name="Main-Class" value="${main-class}"/>
             </manifest>
         </jar>
+        <jar destfile="${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
     </target>
 
     <path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
