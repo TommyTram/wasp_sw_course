@@ -46,8 +46,9 @@
     </target>
 
     <target name="junit" depends="jar">
+
         <mkdir dir="${report.dir}"/>
-        <junit printsummary="yes">
+        <junit printsummary="yes" haltonfailure="yes">
             <classpath>
                 <path refid="classpath"/>
                 <path refid="application"/>

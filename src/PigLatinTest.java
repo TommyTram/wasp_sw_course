@@ -24,7 +24,7 @@ public class PigLatinTest {
 	public void consonantWord1() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("cheers");
-		assertEquals("eerschay", translatedWord);
+		assertEquals("eerssdfschay", translatedWord);
 	}
 	@Test
 	public void consonantWord2() {
