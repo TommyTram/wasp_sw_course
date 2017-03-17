@@ -105,6 +105,16 @@ public class PigLatin {
 		return piglatinWord;
 	}
 
+	public static String reverseTranslator(String pigLatinWord) {
+
+		String cutWord = pigLatinWord.substring(0, pigLatinWord.length() - 2);
+
+
+		String word = cutWord.charAt(cutWord.length() - 1) + cutWord.substring(0,cutWord.length() - 1);
+		System.out.println(word);
+		return word;
+	}
+
 	public static String readFile(String path, Charset encoding) throws IOException {
 		// Reads a text file and returns a string with its content.
 		byte[] encoded = Files.readAllBytes(Paths.get(path));
