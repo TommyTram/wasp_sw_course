@@ -86,11 +86,11 @@ public class PigLatin {
 		// Check consonant cluster in the case of e.g shesh -> eshay and not eshshay
 		int firstWordLength = firstWord.length();
 		int secondWordLength = secondWord.length();
-		String firstWordEnd = firstWord.substring(Math.max(firstWordLength-2,0),firstWordLength);
-		String secondWordStart = secondWord.substring(0,secondWordLength);
+		String firstWordEnd = firstWord.substring(Math.max(firstWordLength-2, 0), firstWordLength);
+		String secondWordStart = secondWord.substring(0, secondWordLength);
 
 		if (firstWordEnd.equals(secondWordStart)) {
-			firstWord = word.substring(firstVowelIndex, word.length()-2);
+			firstWord = word.substring(firstVowelIndex, word.length() - 2);
 		}
 
         if (hasUpperCase == true) {
