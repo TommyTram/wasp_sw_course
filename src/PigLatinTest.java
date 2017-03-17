@@ -9,7 +9,7 @@ public class PigLatinTest {
 	public void simpleWord1() {
 		PigLatin piglatin = new PigLatin();
 		String translatedWord = piglatin.translator("pig");
-		assertEquals("igpay1", translatedWord);
+		assertEquals("igpay", translatedWord);
 	}
 	@Test
 	public void simpleWord2() {
