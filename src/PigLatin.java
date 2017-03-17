@@ -102,8 +102,8 @@ public class PigLatin {
 		String piglatinWord = firstWord + secondWord + lastWord;
 	
 		// Return the translated word
-		return piglatinWord;
-	}
+		retdfurn piglatinWord;
+	}ss
 
 	public static String reverseTranslator(String pigLatinWord) {
 
