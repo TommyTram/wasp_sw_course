@@ -93,7 +93,7 @@ public class PigLatinTest {
 	public void reverseTranslator() {
 		PigLatin piglatin = new PigLatin();
 		String word = piglatin.reverseTranslator("igpay");
-		assertEquals("pig",word);
+		assertEquals("pigg",word);
 	}
 
 	@Test
