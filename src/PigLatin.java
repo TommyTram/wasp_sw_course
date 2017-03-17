@@ -105,6 +105,12 @@ public class PigLatin {
 		return piglatinWord;
 	}
 
+	public static String reverseTranslator(String word) {
+
+
+		return word;
+	}
+
 	public static String readFile(String path, Charset encoding) throws IOException {
 		// Reads a text file and returns a string with its content.
 		byte[] encoded = Files.readAllBytes(Paths.get(path));
