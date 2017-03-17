@@ -86,8 +86,8 @@ public class PigLatin {
 		// Check consonant cluster in the case of e.g shesh -> eshay and not eshshay
 		int firstWordLength = firstWord.length();
 		int secondWordLength = secondWord.length();
-		String firstWordEnd = firstWord.substring(Math.max(firstWordLength-2,0),firstWordLength);
-		String secondWordStart = secondWord.substring(0,secondWordLength);
+		String firstWordEnd = firstWord.substring(Math.max(firstWordLength-2, 0), firstWordLength);
+		String secondWordStart = secondWord.substring(0, secondWordLength);
 
 		if (firstWordEnd.equals(secondWordStart)) {
 			firstWord = word.substring(firstVowelIndex, word.length()-2);
@@ -107,10 +107,10 @@ public class PigLatin {
 
 	public static String reverseTranslator(String pigLatinWord) {
 
-		String cutWord = pigLatinWord.substring(0,pigLatinWord.length()-2);
+		String cutWord = pigLatinWord.substring(0, pigLatinWord.length() - 2);
 
 
-		String word = cutWord.charAt(cutWord.length()-1) + cutWord.substring(0,cutWord.length()-1);
+		String word = cutWord.charAt(cutWord.length() - 1) + cutWord.substring(0,cutWord.length() - 1);
 		System.out.println(word);
 		return word;
 	}
