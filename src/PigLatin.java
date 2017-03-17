@@ -105,9 +105,13 @@ public class PigLatin {
 		return piglatinWord;
 	}
 
-	public static String reverseTranslator(String word) {
+	public static String reverseTranslator(String pigLatinWord) {
+
+		String cutWord = pigLatinWord.substring(0,pigLatinWord.length()-2);
 
 
+		String word = cutWord.charAt(cutWord.length()-1) + cutWord.substring(0,cutWord.length()-1);
+		System.out.println(word);
 		return word;
 	}
 

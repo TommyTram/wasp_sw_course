@@ -89,4 +89,18 @@ public class PigLatinTest {
 		assertEquals("Omeletway", translatedWord);
 	}
 
+	@Test
+	public void reverseTranslator() {
+		PigLatin piglatin = new PigLatin();
+		String word = piglatin.reverseTranslator("igpay");
+		assertEquals("pig",word);
+	}
+
+	@Test
+	public void reverseTranslator2() {
+		PigLatin piglatin = new PigLatin();
+		String word = piglatin.reverseTranslator("anmay");
+		assertEquals("man",word);
+	}
+
 }
