@@ -22,3 +22,5 @@ Move into the jar directory (`cd /build/jar`) and run the code by simply writing
 `java -jar PigLatin.jar <yourWordHere>`
 
 The output will then be your translated piglatin word.
+
+# changed
